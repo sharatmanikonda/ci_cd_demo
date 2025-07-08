@@ -88,9 +88,9 @@ acc
 plt.plot(np.arange(1, 50, 2), [i[2] for i in acc], "ro-")
 # Blue circles - test accuracies
 plt.plot(np.arange(1, 50, 2), [i[3] for i in acc], "bo-")
-plt.title('best_k')
-plt.savefig('plot.png')
-plt.show()
+# plt.title('best_k')
+# plt.savefig('plot.png')
+# plt.show()
 
 
 # Best Model
