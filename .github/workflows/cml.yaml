@@ -11,4 +11,8 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install -r requirements.txt
-          python KNN.py
+          python KNN.py --output plot.png
+          
+          echo 'My first CML report' > report.md
+          echo '![](./plot.png)' >> report.md
+          cml comment create --publish report.md
